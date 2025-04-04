@@ -1,0 +1,202 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    background-color: grey;
+}
+
+
+.left_side,
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrapper {
+    color: grey;
+    width: 75%;
+    max-width: 1100px;
+    background-color: white;
+}
+
+.text_block,
+.footer_block {
+    padding: 35px;
+}
+
+.left_swap {
+    display: none;
+}
+
+.left_side a {
+    color: white;
+    text-decoration: none;
+}
+
+.left_side {
+    background-color: #1d282b;
+    width: 15%;
+    padding: 25px;
+    gap: 40px;
+}
+
+.logo_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.logo_text img {
+    width: 100%;
+}
+
+.logo_text span {
+    color: #2d5564;
+}
+
+.social_img {
+    margin: 0 auto;
+}
+
+.left_menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left_menu li:hover {
+    background-color: #2d393c;
+}
+
+.left_menu li {
+    list-style: none;
+}
+
+h2,
+h3,
+p {
+    font-weight: normal;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 0.9em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+.auto_img {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.footer a {
+    color: grey;
+    font-weight: normal;
+    font-size: 0.9em;
+
+}
+
+.footer {
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_block {
+    width: 30%;
+}
+
+.footer_block h4 {
+    margin-bottom: 15px;
+}
+
+
+.footer_block img {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .footer_block {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .left_menu {
+        display: none;
+    }
+
+    .social_img {
+        display: none;
+    }
+
+    .left_side {
+        width: 10%;
+        padding: 15px;
+    }
+
+    .logo_text {
+        display: none;
+    }
+
+
+    .wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    body {
+        font-size: 0.9em;
+    }
+
+    .wrapper img {
+        width: 100%;
+    }
+
+    .logo_text {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .left_swap {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .footer img {
+        width: 80%;
+    }
+
+    .footer_block {
+        width: 100%;
+        padding: 35px;
+    }
+}
