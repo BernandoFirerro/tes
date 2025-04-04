@@ -192,11 +192,11 @@ p {
     }
 
     .footer img {
-        width: 80%;
+        width: 100%;
     }
 
     .footer_block {
-        width: 100%;
-        padding: 35px;
+        width: 80%;
+        padding: 25px;
     }
 }
